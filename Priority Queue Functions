@@ -1,0 +1,17 @@
+import java.util.PriorityQueue;
+// acting as min heap
+public class hello {
+    public static void main(String[] args) {
+        PriorityQueue<Integer> q = new PriorityQueue<>();
+        q.add(5);
+        q.add(4);
+        q.add(10);
+        q.add(2);
+        q.add(8);
+        System.out.println(q.remove());// remove 2
+        System.out.println(q.peek()); // since 2 has removed so return 4 which is minimum
+        System.out.println(q.contains(4));// whether 4 is present in queue or not
+        System.out.println(q.poll());// retrives and remove 4
+        System.out.println(q.peek());// now minimum is 5 which will be returned;
+    }
+}
